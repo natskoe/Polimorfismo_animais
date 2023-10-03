@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
 
     //VELOCIDADE_KMH * 1000 / 3600 * segundos -> Calcula os metros percorridos.
 
@@ -16,7 +16,7 @@ public class Animal {
         this.metrosPercorridos += metrosPercorridos;
     }
 
-    public void mover(int segundos) {}
+    public abstract void mover(int segundos);
 }
 
 
