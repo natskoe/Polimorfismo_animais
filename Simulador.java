@@ -13,7 +13,6 @@ public class Simulador {
         for (int t = INTERVALO; t <= DURACAO; t += INTERVALO) {
             for (Animal animal : animais){
                 System.out.printf("t = %d%n", t);
-
                 animal.mover(INTERVALO);
                 animal.mover(INTERVALO);
                 animal.mover(INTERVALO);
