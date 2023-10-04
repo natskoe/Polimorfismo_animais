@@ -1,4 +1,4 @@
-public class Guepardo extends Animal{
+public class Guepardo extends Mamifero implements Conversacao{
     private static final int VELOCIDADE_KMH = 130;
 
     public Guepardo(){
@@ -11,5 +11,10 @@ public class Guepardo extends Animal{
             System.out.printf("O guepardo voou %.1f metros.%n",
 			      getMetrosPercorridos());
         }
+    }
+
+    @Override
+    public void falar(){
+        System.out.println("Meeeow meeeooow");
     }
 } // fim da classe Guepardo

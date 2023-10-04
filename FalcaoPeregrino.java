@@ -1,4 +1,4 @@
-public class FalcaoPeregrino extends Animal {
+public class FalcaoPeregrino extends Mamifero implements Conversacao {
     private static final int VELOCIDADE_KMH = 390;
     
     public FalcaoPeregrino(){
@@ -12,4 +12,10 @@ public class FalcaoPeregrino extends Animal {
 			      getMetrosPercorridos());
         }
     }
+
+    @Override
+    public void falar(){
+        System.out.println("Uaaaaar minhoca uaaar");
+    }
+
 } // fim da classe FalcaoPeregrino

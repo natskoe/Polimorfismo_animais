@@ -1,0 +1,7 @@
+Conversacao c = new Baleia();
+c.falar();
+
+//Casting
+Animal a = (Animal) c;
+a.mover(10);
+-----------------------

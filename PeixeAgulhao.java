@@ -1,4 +1,4 @@
-public class PeixeAgulhao extends Animal {
+public class PeixeAgulhao extends Mamifero implements Conversacao {
     private static final int VELOCIDADE_KMH = 115;
 
     public PeixeAgulhao(){
@@ -11,5 +11,9 @@ public class PeixeAgulhao extends Animal {
             System.out.printf("O peixe-agulhao nadou %.1f metros.%n",
 			      getMetrosPercorridos());
         }
+    }
+    @Override
+    public void falar(){
+        System.out.println("Proooocuraaando Neeemooo");
     }
 } // fim da classe PeixeAgulhao
